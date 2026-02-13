@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Justine Belmonte - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        header img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 1rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        section {
+            background: white;
+            margin-top: 2rem;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        section h2 {
+            margin-bottom: 1rem;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            display: inline-block;
+            padding-bottom: 0.3rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .card {
+            padding: 1.5rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 0.8rem;
+        }
+
+        ul li {
+            margin-bottom: 0.6rem;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.8rem;
+        }
+
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            background: #2c3e50;
+            color: white;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        @media(max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img src="c:\Users\BELMONTE\Downloads\just.jpg.jfif" alt="Justine Belmonte">
+        <h1>JUSTINE BELMONTE</h1>
+        <p>BSIT Student | Web Developer | Digital Creator</p>
+        <p>Passionate about building digital solutions and creative content.</p>
+    </header>
+
+    <div class="container">
+
+        <!-- PERSONAL INFORMATION -->
+        <section>
+            <h2>Personal Information</h2>
+            <p><strong>Name:</strong> Justine Belmonte</p>
+            <p><strong>Course:</strong> Bachelor of Science in Information Technology</p>
+            <p><strong>Year:</strong> 3rd Year</p>
+        </section>
+
+        <!-- CAREER OBJECTIVE -->
+        <section>
+            <h2>Career Objective</h2>
+            <p>
+                Motivated and detail-oriented IT student seeking opportunities to apply technical skills 
+                in web development, multimedia editing, and IT support. Dedicated to continuous learning 
+                and delivering high-quality digital solutions.
+            </p>
+        </section>
+
+        <!-- SKILLS -->
+        <section>
+            <h2>Skills</h2>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>Creative Media & Editing</h3>
+                    <ul>
+                        <li>Photo Editing & Retouching</li>
+                        <li>Video Editing & Color Correction</li>
+                        <li>Social Media Content Creation</li>
+                        <li>Thumbnail & Poster Design</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>IT Support & Technical</h3>
+                    <ul>
+                        <li>Computer Troubleshooting</li>
+                        <li>Software Installation</li>
+                        <li>Basic Networking</li>
+                        <li>Technical Documentation</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>Responsive Design</li>
+                        <li>JavaScript Basics</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section>
+            <h2>Projects</h2>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>Academic Multimedia Projects</h3>
+                    <p>Created engaging video presentations and edited digital learning materials for academic purposes.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Portfolio Website</h3>
+                    <p>Designed and developed a responsive personal portfolio website using HTML and CSS.</p>
+                </div>
+
+                <div class="card">
+                    <h3>School Event Graphics</h3>
+                    <p>Designed promotional posters, banners, and social media graphics for school activities.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section>
+            <h2>Contact Information</h2>
+
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:justinebelmonte123@gmail.com">justinebelmonte123@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:09952403800">09952403800</a></p>
+                <p><strong>Location:</strong> Madridejos, Cebu, Philippines</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p><strong>JUSTINE BELMONTE</strong></p>
+        <p>Creative IT Specialist | Digital Content Creator | Web Developer</p>
+        <p>© 2026 All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
